@@ -1,0 +1,147 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DDD8C4;
+    color: #50808E;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark theme */
+.dark-theme {
+    background-color: #9db0ec;
+    color: white;
+}
+
+header {
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    background-color: #A3C9A8;
+    color: white;
+}
+
+footer{
+    text-align: center;
+    background-color: #A3C9A8;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+.dark-theme footer,
+.dark-theme header,
+.dark-theme #result {
+    background-color: #a8eaf3;
+    color: white;
+    border: 1px solid #555;
+}
+
+
+
+
+.container-flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-flex-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.container-wrap-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button, a.button-primary {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    color: #4e9cb3;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Form Styles */
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    color: #50808E;
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #A3C9A8;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Submit/Reset Buttons */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+#output input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #50808E;
+    color: #f1f8f8;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Back to Index Link */
+#backToIndex a {
+    color: #50808E;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+#backToIndex a:hover {
+    text-decoration: underline;
+}
+
+.margin-left-10px {
+    margin-left: 10px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TI510M - LAB 5 - Excel</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body class="container-flex-column-center">
+
+
+
+<header>
+    Excel functions
+</header>
+
+<nav class="container-flex-row">
+    <div class="container-wrap-row">
+        <a class="button-primary" href="./index.html">
+            <i class="bi bi-arrow-right-circle"></i>
+            <span class="margin-left-10px">Home</span>
+        </a>
+        <a class="button-primary fill" href="./excel.html">
+            <i class="bi bi-arrow-down-circle"></i>
+            <span class="margin-left-10px">Excel</span>
+        </a>
+    </div>
+</nav>
+
+<main class="container-flex-column-center">
+    <form id="main-form" name="mainForm" action="#" onsubmit="return false;">
+        <div>
+            <label for="numbers"><b>Enter your numbers separated by spaces:</b></label>
+            <input type="text" name="numbers" id="numbers" onkeyup="isValidNumberStrDisplay('numbers')" required>
+        </div>
+        <div>
+            <input type="radio" name="function" id="sum" value="sum" checked>
+            <label for="sum">AutoSum</label>
+            <br>
+            <input type="radio" name="function" id="avg" value="avg">
+            <label for="avg">Average</label>
+            <br>
+            <input type="radio" name="function" id="max" value="max">
+            <label for="max">Max</label>
+            <br>
+            <input type="radio" name="function" id="min" value="min">
+            <label for="min">Min</label>
+        </div>
+        <div class="buttons">
+            <button type="submit" class="button-primary fill" onclick="myExcelFuns()">
+                <i class="bi bi-calculator"></i>
+                <span class="margin-left-10px">Calculate</span>
+            </button>
+        </div>
+    </form>
+
+    <div id="output">
+        <label for="result">Result:</label>
+        <input type="text" name="result" id="result" readonly>
+    </div>
+
+    <div class="theme-switcher">
+        <button class="button-primary" onclick="setTheme('light')">Beige Theme</button>
+        <button class="button-primary" onclick="setTheme('dark')">Blue Theme</button>
+    </div>
+
+
+</main>
+
+<footer>
+    <p>ILAC & EFREI- HTML, CSS, and JavaScript Main Lab-work - Lilou BECKER</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
